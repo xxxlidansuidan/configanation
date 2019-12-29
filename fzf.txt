@@ -1,0 +1,8 @@
+# use below cmnd in yor terminal everytime for searching DOT file.
+  $ find . | fzf
+
+# (Or) you can add this line into your fzf config.
+  export FZF_DEFAULT_COMMAND='find .'
+  
+# That allowed searching on .git as well. So this was the final command I ended up using for future reference:
+   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -l -g ""'
